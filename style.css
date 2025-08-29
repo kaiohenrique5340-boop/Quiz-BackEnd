@@ -1,9 +1,14 @@
-*{
-    
+.frame{
+    display: flex;
+    justify-content: center
 }
 
 .box{
     height: 200px;
     width: 200px;
     background-color: black;
+    color: white;
+    text-align: center;
+    border: 1px, greenyellow;
+    vertical-align: center;
 }
