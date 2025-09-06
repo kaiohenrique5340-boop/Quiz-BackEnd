@@ -1,22 +1,20 @@
-<?php
-// Gabarito
-$respostas = [
-    "pergunta1" => "100",
-    "pergunta2" => "4",
-    "pergunta3" => "8",
-    "pergunta4" => "10",
-    "pergunta5" => "40"
-];
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Quiz Back-End</title>
+    </head>
+    <body>
+        <h1>Quiz Back-End PHP</h1>
+        <p>Teste seus conehcimentos em PHP</p>
 
-$pontuacao = 0;
-$total = count($respostas);
+        <section id="secao_iniciar">
+            <button type="button" id="btn_iniciar" onclick="window.location.href='quiz.php'">Iniciar</button>
+        </section>
+    </body>
 
-foreach ($respostas as $pergunta => $correta) {
-    if (isset($_POST[$pergunta]) && $_POST[$pergunta] === $correta) {
-        $pontuacao++;
-    }
-}
 
-echo "<h1>Resultado do Quiz</h1>";
-echo "<p>Você acertou $pontuacao de $total questões.</p>";
-?>
+
+
+
+</html>
