@@ -1,100 +1,61 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <title>Quiz</title>
-        <link src="style.css">
-    </head>
-    <body>
-        <form id="quiz">
+<head>
+    <meta charset="UTF-8">
+    <title>Mini Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="quiz" method="post" action="perguntas.php">
+        <h1>Mini Quiz Backend</h1>
+        <hr>
 
-            
-            <H3>Pergunta 1</H3>
-            <p>Adicionar Pergunta aqui</p>
-            <label><input type="radio" name="pergunta1"></label><br>
-            <label><input type="radio" name="pergunta1"></label><br>
-            <label><input type="radio" name="pergunta1"></label><br>
-            <label><input type="radio" name="pergunta1"></label>
-            
-            <br><br>
+        <fieldset>
+            <legend>Pergunta 1: Quanto é 50 + 50?</legend>
+            <label><input type="radio" name="pergunta1" id="p1-100" value="100" required>100</label><br>
+            <label><input type="radio" name="pergunta1" id="p1-90" value="90" required>90</label><br>
+            <label><input type="radio" name="pergunta1" id="p1-70" value="70" required>70</label><br>
+        </fieldset>
 
-            <H3>Pergunta 2</H3>
-            <p>Adicionar Pergunta aqui</p>
-            <label><input type="radio" name="pergunta2"></label><br>
-            <label><input type="radio" name="pergunta2"></label><br>
-            <label><input type="radio" name="pergunta2"></label><br>
-            <label><input type="radio" name="pergunta2"></label>
-            
-            <br><br>
-            
-            <H3>Pergunta 3</H3>
-            <p>Adicionar Pergunta aqui</p>
-            <label><input type="radio" name="pergunta3"></label><br>
-            <label><input type="radio" name="pergunta3"></label><br>
-            <label><input type="radio" name="pergunta3"></label><br>
-            <label><input type="radio" name="pergunta3"></label>
-            
-            <br><br>
-            
-            <H3>Pergunta 4</H3>
-            <p>Adicionar Pergunta aqui</p>
-            <label><input type="radio" name="pergunta4"></label><br>
-            <label><input type="radio" name="pergunta4"></label><br>
-            <label><input type="radio" name="pergunta4"></label><br>
-            <label><input type="radio" name="pergunta4"></label>
-            
-            <br><br>
-            
-            <H3>Pergunta 5</H3>
-            <p>Adicionar Pergunta aqui</p>
-            <label><input type="radio" name="pergunta5"></label><br>
-            <label><input type="radio" name="pergunta5"></label><br>
-            <label><input type="radio" name="pergunta5"></label><br>
-            <label><input type="radio" name="pergunta5"></label>
+        <br>
 
-            <br><br>
-            
-            <H3>Pergunta 6</H3>
-            <p>Adicionar Pergunta aqui</p>
-            <label><input type="radio" name="pergunta6"></label><br>
-            <label><input type="radio" name="pergunta6"></label><br>
-            <label><input type="radio" name="pergunta6"></label><br>
-            <label><input type="radio" name="pergunta6"></label>
+        <fieldset>
+            <legend>Pergunta 2: Quanto é 2 + 2?</legend>
+            <label><input type="radio" name="pergunta2" id="p2-7" value="7" required>7</label><br>
+            <label><input type="radio" name="pergunta2" id="p2-4" value="4" required>4</label><br>
+            <label><input type="radio" name="pergunta2" id="p2-5" value="5" required>5</label><br>
+        </fieldset>
 
-            <br><br>
-            
-            <H3>Pergunta 7</H3>
-            <p>Adicionar Pergunta aqui</p>
-            <label><input type="radio" name="pergunta7"></label><br>
-            <label><input type="radio" name="pergunta7"></label><br>
-            <label><input type="radio" name="pergunta7"></label><br>
-            <label><input type="radio" name="pergunta7"></label>
+        <br>
 
-            <br><br>
-            
-            <H3>Pergunta 8</H3>
-            <p>Adicionar Pergunta aqui</p>
-            <label><input type="radio" name="pergunta8"></label><br>
-            <label><input type="radio" name="pergunta8"></label><br>
-            <label><input type="radio" name="pergunta8"></label><br>
-            <label><input type="radio" name="pergunta8"></label>
+        <fieldset>
+            <legend>Pergunta 3: Quanto é 4 + 4?</legend>
+            <label><input type="radio" name="pergunta3" id="p3-7" value="7" required>7</label><br>
+            <label><input type="radio" name="pergunta3" id="p3-8" value="8" required>8</label><br>
+            <label><input type="radio" name="pergunta3" id="p3-10" value="10"required>10</label><br>
+        </fieldset>
 
-            <br><br>
-            
-            <H3>Pergunta 9</H3>
-            <p>Adicionar Pergunta aqui</p>
-            <label><input type="radio" name="pergunta9"></label><br>
-            <label><input type="radio" name="pergunta9"></label><br>
-            <label><input type="radio" name="pergunta9"></label><br>
-            <label><input type="radio" name="pergunta9"></label>
+        <br>
 
-            <br><br>
+        <fieldset>
+            <legend>Pergunta 4: Quanto é 5 + 5?</legend>
+            <label><input type="radio" name="pergunta4" id="p4-15" value="15" required>15</label><br>
+            <label><input type="radio" name="pergunta4" id="p4-18" value="18" required>18</label><br>
+            <label><input type="radio" name="pergunta4" id="p4-10" value="10" required>10</label><br>
+        </fieldset>
 
-            <H3>Pergunta 10</H3>
-            <p>Adicionar Pergunta aqui</p>
-            <label><input type="radio" name="pergunta10"></label><br>
-            <label><input type="radio" name="pergunta10"></label><br>
-            <label><input type="radio" name="pergunta10"></label><br>
-            <label><input type="radio" name="pergunta10"></label>
-        </form>
-    </body>
+        <br>
+
+        <fieldset>
+            <legend>Pergunta 5: Quanto é 20 + 20?</legend>
+            <label><input type="radio" name="pergunta5" id="p5-40" value="40" required>40</label><br>
+            <label><input type="radio" name="pergunta5" id="p5-50" value="50" required>50</label><br>
+            <label><input type="radio" name="pergunta5" id="p5-60" value="60" required>60</label><br>
+        </fieldset>
+
+        <br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
 </html>
