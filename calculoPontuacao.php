@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
     $indice++;
 }
 
-$_session['indice'] = $indice;
+$_SESSION['indice'] = $indice;
 
 if ($indice < count($perguntas)){
     header('Location: Quiz.php');
