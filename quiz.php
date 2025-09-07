@@ -23,6 +23,7 @@
                 <input type="radio" name="opcao" value="B"><?= $perguntaAtual['respostas']['B']?><br>
                 <input type="radio" name="opcao" value="C"><?= $perguntaAtual['respostas']['C']?><br>
                 <input type="radio" name="opcao" value="D"><?= $perguntaAtual['respostas']['D']?><br>
+                <input type="radio" name="opcao" value="E"><?= $perguntaAtual['respostas']['E']?><br>
                 <button type="submit">Confirmar</button>
             </form>
         </section>
