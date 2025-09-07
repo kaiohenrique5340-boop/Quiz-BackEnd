@@ -18,7 +18,7 @@
 
         <section id="secao_iniciar">
             <form action="calcularPontuacao.php" method="post">
-                <h3><?$perguntaAtual['enunciado']?></h3>
+                <h3><?= $perguntaAtual['enunciado']?></h3>
                 <input type="radio" name="opcao" value="A"><?= $perguntaAtual['respostas']['A']?><br>
                 <input type="radio" name="opcao" value="B"><?= $perguntaAtual['respostas']['B']?><br>
                 <input type="radio" name="opcao" value="C"><?= $perguntaAtual['respostas']['C']?><br>
