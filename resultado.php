@@ -1,6 +1,10 @@
 <?php
 session_start();
-$resultado = $_SESSION['acertos'];
+
+// Garante que a pontuação só é lida se existir, caso contrário, é 0.
+$resultado = isset($_SESSION['acertos']) ? $_SESSION['acertos'] : 0;
+
+// Destrói a sessão para que o próximo quiz comece do zero.
 session_destroy();
 ?>
 
@@ -15,8 +19,9 @@ session_destroy();
         
         <section id="secao_resultado">
             <h2>Resultado</h2>
-            <h2> <?= $resultado ?> Pontos </h2>
+            <h2> <?= htmlspecialchars($resultado) ?> Pontos </h2>
 
-            <button type="button" id="btn_iniciar" onclick="window.location.href='quiz.php'">Recomecar</button>
+            <button type="button" id="btn_iniciar" onclick="window.location.href='quiz.php'">Recomeçar</button>
         </section>
     </body>
+</html>

@@ -13,11 +13,11 @@ $perguntas = [
     'gabarito' => "B"
   ],
   [
-    // Alterado para aspas simples para não interpretar o código
+    
     'enunciado' => 'Qual é a saída do seguinte código?\n\n$x = 5;\n$y = 3;\necho $x + $y;',
     'respostas' => [
       "A" => "8",
-      "B" => '$x + $y', // Alterado para aspas simples
+      "B" => '$x + $y', 
       "C" => "5 + 3",
       "D" => "53",
       "E" => "Erro"
@@ -124,7 +124,7 @@ $perguntas = [
     'gabarito' => "A"
   ],
   [
-    // Alterado para aspas simples
+    
     'enunciado' => 'Se você tiver o seguinte código: <br>$x = 10;<br>if ($x > 5) {<br>  echo \'Olá\';<br>} else {<br>  echo \'Tchau\';<br>}',
     'respostas' => [
       "A" => "Olá",
@@ -136,7 +136,7 @@ $perguntas = [
     'gabarito' => "A"
   ],
   [
-    // Alterado para aspas simples
+    
     'enunciado' => 'Qual é a saída do seguinte código?<br>$x = 5;<br>echo ++$x;',
     'respostas' => [
       "A" => "5",
@@ -192,7 +192,7 @@ $perguntas = [
     'gabarito' => "B"
   ],
   [
-    // Alterado para aspas simples
+    
     'enunciado' => 'Qual a saída do seguinte código?<br>$a = \'Olá \';<br>$a = \'Mundo\';<br>echo $a;',
     'respostas' => [
       "A" => "Olá",

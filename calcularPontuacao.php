@@ -1,32 +1,29 @@
 <?php
-session_start();//inicia a sessao
+session_start();
 include 'perguntas.php';
 
-/*se houver sessao iniciada esse bloco
-ira iniciar com indice e acertos com valor de 0*/
-if (!isset($_SESSION['indice'])){
-    $_SESSION['indice'] = 0;
-    $_SESSION['acertos'] = 0;
-}
-
-/*
-*/ 
-if ($_SERVER['REQUEST_METHOD'] === 'POST'){
+// Verifica se o formulário foi enviado
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['opcao'])) {
+    
+    $perguntaAtualNum = $_SESSION['perguntaAtualNum'];
+    $indicesSorteados = $_SESSION['perguntasAleatoria'];
+    $indiceReal = $indicesSorteados[$perguntaAtualNum];
     $opcao = $_POST['opcao'];
-    $indice = $_SESSION['indice'];
 
-    if ($opcao == $perguntas[$indice]['gabarito']){
+    // Verificação da resposta correta
+    if ($opcao == $perguntas[$indiceReal]['gabarito']) {
         $_SESSION['acertos']++;
     }
-    $indice++;
+    
+    // Avança para a próxima pergunta
+    $_SESSION['perguntaAtualNum']++;
 }
 
-$_SESSION['indice'] = $indice;
-
-if ($indice < count($perguntas)){
-    header('Location: Quiz.php');
+// Redireciona para a próxima pergunta ou para o resultado
+if (isset($_SESSION['perguntaAtualNum']) && $_SESSION['perguntaAtualNum'] < 10) {
+    header('Location: quiz.php');
     exit;
-}else{
+} else {
     header('Location: resultado.php');
     exit;
 }
